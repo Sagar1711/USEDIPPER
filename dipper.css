@@ -1,0 +1,103 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font: normal 13px/1.5 Serif;
+   color: #333;
+}
+
+.cart-position{
+   float: right;
+}
+
+.wrapper {
+   margin: 20px auto;
+   padding: 20px;
+   display: inline-block;
+}
+
+.items{
+   display: block;
+}
+
+.item{
+   display: inline-block;
+   margin-right: 20px;
+   float: left;
+}
+
+h1 {
+   margin: 20px;
+   display: inline-block;
+   float: left;
+}
+
+h2, .on1, .on2, .title{
+   padding: 5px;
+}
+
+.title{
+   text-align: center;
+   color: #FFFFFF;
+   background-color: cornflowerblue;
+}
+
+img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.clear{
+   clear: both;
+}
+
+.shopping-cart {
+    display: inline-block;
+    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+p{
+   display: inline-block;
+   float: left;
+   text-align: center;
+}
+
+h3, h2, .on1, .on2{
+   width: inherit;
+   text-align: center;
+}
+
+.on1, .on2{
+   background-color: #F2F2F2;
+}
+
+input{
+   width: 40%;
+   margin-right: 10px;
+   border: none;
+   background-color: #f2f2f2;
+}
+
+button{
+   width: 100%;
+   background-color: #ff2300;
+   padding: 10px;
+   border: none;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.on1 span{
+   font-size: 20px;
+   margin: 5px 20px 5px 20px;
+   text-align: center;
+}
+
+.sc{
+   display: inline;
+}

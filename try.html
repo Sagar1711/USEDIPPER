@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <script src="try.js"></script>
+      <script type="text/javascript">
+         function calprice(val, c){
+            if(c==1){
+            var v = parseInt(val.value); if(document.getElementById('p1').value == '0.2lt'){var x  = v * 200; document.getElementById('p2').innerHTML = "&#8377;" + x;}
+            else{var x  = v * 499; document.getElementById('p2').innerHTML = "&#8377;" + x;}}
+            else if(c==2){
+               var v = parseInt(val.value); if(document.getElementById('p0').value == '0.2lt'){var x  = v * 200; document.getElementById('p3').innerHTML = "&#8377;" + x;}
+               else{var x  = v * 499; document.getElementById('p3').innerHTML = "&#8377;" + x;}
+            }
+         }
+         function calpricev(val, c){
+            if(c==1){var v = document.getElementById('q1').value;
+            if(val.value == "0.2lt")
+            {
+            var x  = v * 200; document.getElementById('p2').innerHTML = "&#8377;" + x;}
+            else if(val.value == "1Lt"){var x  = v * 499; document.getElementById('p2').innerHTML = "&#8377;" + x;}}
+
+            if(c==2){var v = document.getElementById('q2').value;
+            if(val.value == "0.2lt")
+            {
+            var x  = v * 200; document.getElementById('p3').innerHTML = "&#8377;" + x;}
+            else if(val.value == "1Lt"){var x  = v * 499; document.getElementById('p3').innerHTML = "&#8377;" + x;}}
+
+         }
+      </script>
+      <link rel="stylesheet" href="dipper.css" media="screen" title="no title" charset="utf-8">
+   </head>
+   <body>
+      <!-- wrapper -->
+      <div class="wrapper">
+           <h1>ADD TO CART</h1>
+       <span class="cart-position"><i class="shopping-cart"></i></span>
+
+          <div class="clear"></div>
+          <!-- items -->
+          <div class="items">
+              <!-- single item -->
+              <div class="item">
+                  <h3 class="title">Sofit Chocolate Milk</h3>
+                  <img src="1.jpg" alt="item" />
+                  <h2>Tetra Pack 1.0Lt</h2>
+                  <div class="on1">
+                     <center><span id = "p2">&#8377;449</span> <span><s>&#8377;449</s><span></center>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="on2">
+                     <input type="number" name="quant" value="1" onchange = "calprice(this, 1)" id = "q1">
+                     <select class="verity" name="ver" onchange="calpricev(this,1)" id="p1">
+                        <option value = "1Lt" >1.0Lt</option>
+                        <option value = "0.2lt">200ml</option>
+                     </select>
+                  </div>
+                  <button class="cart" type="button"><span style="color:white"><img src="sc.png" alt="" class = "sc"/>BUY</span></button>
+              </div>
+              <!--/ single item -->
+              <!-- single item -->
+              <div class="item">
+                  <h3 class="title">Sofit Kesar Milk</h3>
+                  <img src="2.png" alt="item" />
+                  <h2>Tetra Pack 1.0Lt</h2>
+
+                  <div class="on1">
+                     <center><span id="p3">&#8377;449</span> <span>&#8377;<s>449</s><span></center>
+                  </div>
+                  <div class="clear"></div>
+                  <div class="on2">
+                     <input type="number" name="quant" value="1" onchange = "calprice(this,2)" id = "q2">
+                     <select class="verity" name="ver" onchange="calpricev(this,2)" id = "p0">
+                        <option value = "1Lt" >1.0Lt</option>
+                        <option value = "0.2lt">200ml</option>
+                     </select>
+                  </div>
+                  <button class="cart" type="button"><span style="color:white"><img src="sc.png" alt="" class = "sc"/>BUY</span></button>
+              </div>
+              <!--/ single item -->
+          </div>
+          <!--/ items -->
+      </div>
+      <!--/ wrapper -->
+   </body>
+</html>
